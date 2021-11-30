@@ -1,0 +1,30 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ec.edu.espe.arqSoftware.webServiceFederacion/ws"
+           targetNamespace="http://ec.edu.espe.arqSoftware.webServiceFederacion/ws" elementFormDefault="qualified">
+
+
+     <xs:element name="obtenerLocalidadRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="disponibilidad" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="obtenerLocalidadResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="localidad" type="tns:localidad"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+ 
+    <xs:complexType name="localidad">
+        <xs:sequence>
+            <xs:element name="codigo_localidad" type="xs:string"/>
+            <xs:element name="disponibilidad" type="xs:integer"/>
+            <xs:element name="precio" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2021.11.29 a las 09:11:30 PM COT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://ec.edu.espe.arqSoftware.webServiceFederacion/ws">
+    <schemaBindings map="false">
+      <package name="webservicefederacion.arqsoftware.espe.edu.ec.ws"/>
+    </schemaBindings>
+    <bindings scd="tns:obtenerPartidosRequest">
+      <class ref="webservicefederacion.arqsoftware.espe.edu.ec.ws.ObtenerPartidosRequest"/>
+    </bindings>
+    <bindings scd="tns:obtenerPartidosResponse">
+      <class ref="webservicefederacion.arqsoftware.espe.edu.ec.ws.ObtenerPartidosResponse"/>
+    </bindings>
+    <bindings scd="~tns:partido">
+      <class ref="webservicefederacion.arqsoftware.espe.edu.ec.ws.Partido"/>
+    </bindings>
+    <bindings scd="~tns:localidad">
+      <class ref="webservicefederacion.arqsoftware.espe.edu.ec.ws.Localidad"/>
+    </bindings>
+  </bindings>
+</bindings>
+

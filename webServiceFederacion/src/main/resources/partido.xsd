@@ -1,0 +1,42 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ec.edu.espe.arqSoftware.webServiceFederacion/ws"
+           targetNamespace="http://ec.edu.espe.arqSoftware.webServiceFederacion/ws" elementFormDefault="qualified">
+
+    <xs:element name="obtenerPartidosRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fecha" type="xs:date"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="obtenerPartidosResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="partido" type="tns:partido"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+   
+
+    <xs:complexType name="partido">
+        <xs:sequence>
+            <xs:element name="codigo_partido" type="xs:integer"/>
+            <xs:element name="codigo_localidad" type="tns:localidad"/>
+            <xs:element name="equipo_local" type="xs:string"/>
+            <xs:element name="equipo_visitante" type="xs:string"/>
+            <xs:element name="fecha" type="xs:date"/>
+            <xs:element name="lugar" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="localidad">
+        <xs:sequence>
+            <xs:element name="codigo_localidad" type="xs:string"/>
+            <xs:element name="codigo" type="tns:codigo"/>
+            <xs:element name="disponibilidad" type="xs:integer"/>
+            <xs:element name="precio" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
